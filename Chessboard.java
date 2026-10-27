@@ -1,4 +1,4 @@
-public class Chessboard extends Hero implements Star {
+class Chessboard extends Hero implements Star {
     private String boardPosition;
     private int boardSize;
     private int starLevel = 1;
@@ -22,5 +22,14 @@ public class Chessboard extends Hero implements Star {
         } else {
             System.out.println("Bintang sudah mencapai maksimal!");
         }
+    }
+
+    @Override
+    public int getStarLevel() {
+        return starLevel;
+    }
+
+    public String getBoardLevel() {
+        return "Standard Chess Board Level 1";
     }
 }
